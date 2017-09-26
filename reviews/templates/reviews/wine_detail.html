@@ -30,7 +30,14 @@
 
 <form action="{% url 'reviews:add_review' wine.id %}" method="post" class="form">
     {% csrf_token %}
-    {% bootstrap_form form layout='inline' %}
+<!--     {% bootstrap_form form layout='inline' %} -->
+    {% bootstrap_field form.comment show_label=True %}
+    {% bootstrap_field form.coffee_roast show_label=True %}
+    {% bootstrap_field form.chocolate_color show_label=True %}
+    {% bootstrap_field form.tart_creamy show_label=True %}
+    {% bootstrap_field form.fruit_pastry show_label=True %}
+    {% bootstrap_field form.herbaceous show_label=True %}
+
     {% buttons %}
     <button type="submit" class="btn btn-primary">
       {% bootstrap_icon "star" %} Add

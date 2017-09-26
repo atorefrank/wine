@@ -12,7 +12,7 @@ class ReviewForm(ModelForm):
         labels = {
             "coffee_roast": "Coffee Roast 1-light, 5-dark",
             "chocolate_color": "Chocolate 1-light, 5-dark",
-            "tart_creamy": "lime-1 or banana/mango-2",
+            "tart_creamy": "lime-1 or banana/mango-5",
             "fruit_pastry": "Fruit salad-1 or Pastry-5",
-            "herbaceous": "How much do you like smell of morning grass",
+            "herbaceous": "How much do you like smell of morning grass today? 1 - 5",
         }
